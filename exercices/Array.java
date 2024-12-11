@@ -6,8 +6,8 @@ public class Array {
   public static void main(String[] args) {
     int[] arr = randomList(101);
 
-    System.out.println("Mayor: " + arr[arr.length - 1]);
-    System.out.println("Menor: " + arr[0]);
+    System.out.println("Mayor: " + Arrays.stream(arr).max().getAsInt());
+    System.out.println("Menor: " + Arrays.stream(arr).min().getAsInt());
 
     System.out.println("List of primes: ");
     showPrimes(arr);

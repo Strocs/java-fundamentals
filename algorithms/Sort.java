@@ -1,13 +1,15 @@
 package algorithms;
 
 import java.util.Arrays;
+import utils.Parse;
 
 class Sort {
   public static void main(String[] args) {
-    int[] array = parse.args(args);
-    int[] array1 = parse.args(args);
+    int[] array = Parse.args(args);
+    int[] array1 = Parse.args(args);
     int[] bubble = bubbleSort(array);
     int[] insertion = insertionSort(array1);
+
     System.out.println(Arrays.toString(bubble));
     System.out.println(Arrays.toString(insertion));
   }
